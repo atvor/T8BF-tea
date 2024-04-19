@@ -4,18 +4,27 @@ import Dropdown from "@components/navbar/Dropdown.astro"
 import { Astronav, MenuIcon, MenuItems } from "astro-navbar"
 
 const menuitems = [
-	// {  // dropdown
-	// 	title: "Products",
-	// 	path: "#",
-	// 	children: [{ title: "Test", path: "/" }],
-	// },
+	{
+		// dropdown
+		title: "Products",
+		path: "#",
+		children: [
+			{
+				title: "Test",
+				path: "/",
+				badge: true,
+			},
+		],
+	},
 	{
 		title: "About",
 		path: "/about",
+		badge: false,
 	},
 	{
 		title: "Blog",
 		path: "/blog",
+		badge: false,
 	},
 ]
 ---

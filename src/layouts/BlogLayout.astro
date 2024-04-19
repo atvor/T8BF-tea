@@ -3,7 +3,17 @@ import Container from "@components/container.astro"
 import Layout from "@layouts/BlogLayout.astro"
 import { getFormattedDate } from "@utils/all"
 
-const { frontmatter } = Astro.props
+interface BlogPost {
+	frontmatter: {
+		title: string,
+		category: string,
+		author: string,
+		publishDate: string,
+		tags: [string]
+	}
+}
+
+const { frontmatter } = Astro.props as BlogPost
 ---
 
 <Layout title={frontmatter.title}>
