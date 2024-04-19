@@ -6,5 +6,8 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
     site: "https://tea.T8BF.com",
+    image: {
+        service: passthroughImageService(),
+    },
     integrations: [tailwind(), mdx(), sitemap()],
 });
