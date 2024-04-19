@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tea.t8bf.com/sitemap-index.xml
